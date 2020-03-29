@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.19" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\DatosSensoresControllercs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\DatosSensores\" />
+    <Folder Include="Views\Vista\" />
+  </ItemGroup>
+</Project>
