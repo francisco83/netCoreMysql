@@ -9,11 +9,11 @@ using coreNetMysql.Models;
 
 namespace coreNetMysql.Controllers
 {
-    public class DatosSensoresController : Controller
+    public class MongoController : Controller
     {
-        private readonly ILogger<DatosSensoresController> _logger;
+        private readonly ILogger<MongoController> _logger;
 
-        public DatosSensoresController(ILogger<DatosSensoresController> logger)
+        public MongoController(ILogger<MongoController> logger)
         {
             _logger = logger;
         }
@@ -21,10 +21,9 @@ namespace coreNetMysql.Controllers
         public IActionResult Index()
         {
             //return View();
-            SensoresContext context = HttpContext.RequestServices.GetService(typeof(coreNetMysql.Models.SensoresContext)) as SensoresContext;
+            MongoContext context2 = HttpContext.RequestServices.GetService(typeof(coreNetMysql.Models.MongoContext)) as MongoContext;
 
-
-            return View(context.GetAll());
+            return View(context2.GetAll());
         }
 
         public IActionResult Privacy()

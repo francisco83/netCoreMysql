@@ -9,7 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MySql.Data" Version="8.0.19" />
+    <PackageReference Include="MySql.Data" Version="8.0.24" />
+    <PackageReference Include="MongoDB.Bson" Version="2.12.3" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.3" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.12.3" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\DatosSensoresControllercs" />
@@ -17,5 +20,6 @@
   <ItemGroup>
     <Folder Include="Views\DatosSensores\" />
     <Folder Include="Views\Vista\" />
+    <Folder Include="Views\Mongo\" />
   </ItemGroup>
 </Project>
