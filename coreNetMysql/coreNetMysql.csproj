@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.24" />
     <PackageReference Include="MongoDB.Bson" Version="2.12.3" />
-    <PackageReference Include="MongoDB.Driver" Version="2.12.3" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
     <PackageReference Include="MongoDB.Driver.Core" Version="2.12.3" />
   </ItemGroup>
   <ItemGroup>
